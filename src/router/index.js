@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 引入需要的视图组件
-import Index from '@/components/index'
+import Index from '@/views/index'
 
 // css reset
 import ResetCss from '@/assets/css/reset.css'

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from '../views/header'
-import Content from '../views/content'
+import Header from '../components/header'
+import Content from '../components/content'
 
 export default {
   name: 'index',

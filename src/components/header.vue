@@ -13,12 +13,7 @@
 
 <script>
 export default {
-  name: 'header',
-  data () {
-    return {
-      msg: ''
-    }
-  }
+  name: 'header'
 }
 </script>
 
@@ -32,10 +27,15 @@ export default {
     height: 100%;
   }
   .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 4.1rem;
     background-color: #00a2ea;
     justify-content: space-between;
     color: #fff;
+    z-index: 3;
   }
   .head h3, .head .el-icon {
     line-height: 4.1rem;

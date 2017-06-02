@@ -1,6 +1,16 @@
 body, h3 {
   margin: 0;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 h3 {
   font-weight: normal;
+}
+body {
+  width: 100%;
+  height: 46.25rem;
+  overflow: hidden;
 }

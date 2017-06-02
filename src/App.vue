@@ -12,8 +12,11 @@ export default {
 
 <style>
 #app {
+  position: relative;
   font-family: 'Microsoft Yahei';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 46.25rem;
+  overflow: hidden;
 }
 </style>
