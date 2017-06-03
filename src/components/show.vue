@@ -1,8 +1,8 @@
 <template>
   <div class="show">
-    <ul class="s-wrap clearfix">
-      <custom-show-item v-for="index,item in items" :item="item"></custom-show-item>
-    </ul>
+    <div class="s-wrap clearfix">
+      <custom-show-item v-for="item,index in items" :item="item"></custom-show-item>
+    </div>
   </div>
 </template>
 

@@ -1,17 +1,18 @@
 <template>
-  <section>
+  <section class="detail">
     <custom-header />
-    <section id="wrap-scroll">
-     <custom-content />
+    <section id="wrap-scroll-d">
+      <custom-content />
     </section>
     
   </section>
 </template>
 
 <script>
-import Header from '../components/header'
-import Content from '../components/content'
+import Header from '../components/header-detail'
+import Content from '../components/content-detail'
 import BScroll from 'better-scroll'
+
 
 export default {
   name: 'index',
@@ -25,7 +26,7 @@ export default {
     }
   },
   mounted () {
-    let scroll = new BScroll(document.getElementById('wrap-scroll'),{
+    let scroll = new BScroll(document.getElementById('wrap-scroll-d'),{
       snap: true
     })
     // scroll.scrollTo(0, 1000)
@@ -38,9 +39,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  #wrap-scroll {
-    width: 27rem;
+  #wrap-scroll-d {
     height: 48rem;
-    background-color: #f3f3f3;
+    background-color: #f9f9f9;
   }
 </style>

@@ -7,9 +7,13 @@ import router from './router'
 // element UI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-
-
 Vue.use(ElementUI)
+//  Mint UI
+import Mint from 'mint-ui';
+Vue.use(Mint);
+// better scroll
+
+
 
 Vue.config.productionTip = false
 

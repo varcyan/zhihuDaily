@@ -19,38 +19,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .head, .head .hd-left, .head .hd-right {
-    display: flex;
-    align-items: center;
-  }
-  .head .hd-left, .head .hd-right {
-    height: 100%;
-  }
-  .head {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4.1rem;
-    background-color: #00a2ea;
-    justify-content: space-between;
-    color: #fff;
-    z-index: 3;
-  }
-  .head h3, .head .el-icon {
-    line-height: 4.1rem;
-  }
-  .head h3 {
-    font-size: 1.25rem;
-    text-indent: 1.4rem;
-    height: 100%;
-  }
-  .head .el-icon {
-    font-size: 1.4rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    height: 100%;
-  }
   .head .el-icon-minus {
     width: 1.4rem;
     font-weight: normal;

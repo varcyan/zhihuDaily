@@ -16,7 +16,7 @@ export default {
   font-family: 'Microsoft Yahei';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 46.25rem;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 </style>

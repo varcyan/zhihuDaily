@@ -1,10 +1,10 @@
 <template>
-  <li class="s-item">
+  <div class="s-item">
     <a href="">
       <img src="" alt="">
     </a>
     <div class="s-info">{{item.info}}</div>
-  </li>
+  </div>
 </template>
 
 <script>
