@@ -77,7 +77,7 @@
     padding: .725rem 0;
     height: 6.775rem;
     background-color: #00a2ea;
-    color: #fff;
+    color: #fff;/*test*/
     line-height: 2.5rem;
   }
   .opt-header .opt-user {
