@@ -46,6 +46,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  #wrap-scroll {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+  }
   .content {
     padding-top: 4.1rem;
   }
