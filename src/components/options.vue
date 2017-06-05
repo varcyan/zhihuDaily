@@ -59,18 +59,10 @@ export default {
   0% {
     transform: translateX(-100%);
   }
-<<<<<<< HEAD
   100% {
     transform: translateX(0%);
-=======
-  @keyframes optmove {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
   }
+}
   #options {
     display: none;
     position: absolute;
@@ -127,9 +119,8 @@ export default {
   }
   .opt-list .item-index {
     color: #00a2ea;
->>>>>>> f3a1c1f72ec702187e057c6b90949fc73fc8d368
   }
-}
+
 
 #options {
   display: none;
