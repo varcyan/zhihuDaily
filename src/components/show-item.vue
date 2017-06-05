@@ -1,15 +1,15 @@
 <template>
   <div class="s-item">
     <a href="">
-      <img src="" alt="">
+      <img :src="data.image" alt="">
     </a>
-    <div class="s-info">{{item.info}}</div>
+    <div class="s-info">{{data.title}}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item'],
+  props: ['data'],
   name: 'showItem',
   data () {
     return {
@@ -22,12 +22,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .s-item {
-    flex: 1;
     position: relative;
     width: 27rem;
     height: 16.875rem;
     background-color: #eee;
     color: #fff;
+  }
+  .s-item img {
+    width: 100%;
   }
   .s-item .s-info {
     position: absolute;

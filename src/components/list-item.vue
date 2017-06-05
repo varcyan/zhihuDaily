@@ -1,8 +1,8 @@
 <template>
   <li class="list-item">
-    <div class="l-item-info">{{item.info}}</div>
+    <div class="l-item-info">{{data.item.title}}</div>
     <div class="l-item-img">
-      <img src="" alt="">
+      <img :src="data.item.images[0]" alt="">
     </div>
   </li>
 </template>
@@ -10,8 +10,9 @@
 <script>
 
 export default {
+  props: ['data'],
   name: 'listItem',
-  props: ['item']
+  props: ['data']
 }
 </script>
 
@@ -37,6 +38,9 @@ export default {
     width: 6.15rem;
     height: 5.4rem;
     overflow: hidden;
+  }
+  .l-item-img img {
+    width: 100%;
   }
   .list-item:last-child {
     margin-bottom: 0;

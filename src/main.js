@@ -11,8 +11,11 @@ Vue.use(ElementUI)
 //  Mint UI
 import Mint from 'mint-ui';
 Vue.use(Mint);
-// better scroll
 
+// axios vue-axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
 
 
 Vue.config.productionTip = false

@@ -1,37 +1,19 @@
 <template>
   <section>
     <custom-header />
-    <section id="wrap-scroll">
-     <custom-content />
-    </section>
-    
+    <custom-content />
   </section>
 </template>
 
 <script>
 import Header from '../components/header'
 import Content from '../components/content'
-import BScroll from 'better-scroll'
 
 export default {
   name: 'index',
   components:{
     'custom-header':Header,
     'custom-content':Content
-  },
-  data () {
-    return {
-      msg: 'varcyan'
-    }
-  },
-  mounted () {
-    let scroll = new BScroll(document.getElementById('wrap-scroll'),{
-      snap: true
-    })
-    // scroll.scrollTo(0, 1000)
-    // scroll.on('scroll', (pos) => {
-    //   console.log(pos.x + '~' + pos.y)
-    // })
   }
 }
 </script>

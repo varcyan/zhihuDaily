@@ -3,7 +3,7 @@
     <div class="list-class">
       <h3 class="cl-title">今日</h3>
       <ul class="cl-list">
-        <custom-list-item v-for="item,index in list" :item="item"></custom-list-item>
+        <custom-list-item v-for="item in data" :data="{item:item}" :key="item.id"></custom-list-item>
       </ul>
     </div>
   </section>
@@ -12,49 +12,10 @@
 <script>
 import ListItem from './list-item'
 export default {
+  props: ['data'],
   name: 'list',
   components: {
     'custom-list-item': ListItem
-  },
-  data () {
-    return {
-      msg: 'varcyan',
-      list: [
-        {
-          "info": '1草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '2草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '3草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '2草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '3草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '2草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '3草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '2草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '3草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '2草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        },
-        {
-          "info": '3草莓不是红的呢！相机告诉你真相真相啊啊啊啊啊啊啊'
-        }
-      ]
-    }
   }
 }
 </script>
@@ -64,6 +25,7 @@ export default {
   .list {
     background-color: #f3f3f3;
     padding: 0 .575rem 1.5rem;
+    /*min-height: 50rem;*/
   }
   .cl-title {
     font-size: .95rem;

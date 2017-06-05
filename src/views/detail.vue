@@ -29,10 +29,6 @@ export default {
     let scroll = new BScroll(document.getElementById('wrap-scroll-d'),{
       snap: true
     })
-    // scroll.scrollTo(0, 1000)
-    // scroll.on('scroll', (pos) => {
-    //   console.log(pos.x + '~' + pos.y)
-    // })
   }
 }
 </script>
