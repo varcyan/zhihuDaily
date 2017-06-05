@@ -30,7 +30,7 @@ export default {
       this.data = res.data
       // console.log(JSON.stringify(data.data));
       console.log(res.data);
-
+      // DOM 渲染完成后执行 better scroll
       this.$nextTick(()=>{
         console.log('更新');
         let contScroll = document.getElementById('wrap-scroll')
