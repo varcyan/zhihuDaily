@@ -12,7 +12,6 @@ import Show from './show'
 import List from './list'
 import BScroll from 'better-scroll'
 
-
 export default {
   name: 'content',
   components:{

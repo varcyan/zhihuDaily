@@ -32,91 +32,103 @@
   </section>
 </template>
 <script>
-  import BScroll from 'better-scroll'
-  export default {
-    data () {
-      return {
-        data: {
-          sel: '首页'
-        }
+import BScroll from 'better-scroll'
+export default {
+  data() {
+    return {
+      data: {
+        sel: '首页'
       }
-    },
-    mounted () {
-      let bsEle = document.getElementById('options')
-      let scroll = new BScroll(bsEle, {
-        snap: true,
-        bounce: false
-      })
     }
+  },
+  mounted() {
+    let bsEle = document.getElementById('options')
+    let scroll = new BScroll(bsEle, {
+      snap: true,
+      bounce: false
+    })
   }
+}
 </script>
 <style>
-  #options.active {
-    animation: 1.5s optmove;
+#options.active {
+  animation: 1.5s optmove;
+}
+
+@keyframes optmove {
+  0% {
+    transform: translateX(-100%);
   }
-  @keyframes optmove {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
+  100% {
+    transform: translateX(0%);
   }
-  #options {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #fff;
-    height: 100%;
-    color: red; 
-    z-index: 3;
-    width: 22.85rem;
-  }
-  #options .opt-header {
-    padding: .725rem 0;
-    height: 6.775rem;
-    background-color: #00a2ea;
-    color: #fff;
-    line-height: 2.5rem;
-  }
-  .opt-header .opt-user {
-     display: flex;
-     margin-bottom: 2rem;
-     padding-left: 1.2rem;
-  }
-  .opt-header .opt-head {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 1.25rem;
-    background-color: #eee;
-    margin-right: .875rem;
-  }
-  .opt-header .user-coll {
-    display: flex;
-  }
-  .user-coll .el-icon {
-    font-size: 1.1rem;
-    color: #fff;
-    margin: 0 1.75rem;
-    line-height: 2.3rem;
-  }
-  .user-coll .el-icon::before {
-    margin-right: 1.75rem;
-  }
-  #options .opt-list {
-    color: #000;
-    font-size: 1.1rem;
-  }
-  .opt-list .opt-list-item {
-    height: 3.8rem;
-    line-height: 3.8rem;
-    text-indent: 1.4rem;
-  }
-  .opt-list .opt-list-item.active {
-    background-color: #f0f0f0;
-  }
-  .opt-list .item-index {
-    color: #00a2ea;
-  }
+}
+
+#options {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  color: red;
+  z-index: 3;
+  width: 22.85rem;
+}
+
+#options .opt-header {
+  padding: .725rem 0;
+  height: 6.775rem;
+  background-color: #00a2ea;
+  color: #fff;
+  line-height: 2.5rem;
+}
+
+.opt-header .opt-user {
+  display: flex;
+  margin-bottom: 2rem;
+  padding-left: 1.2rem;
+}
+
+.opt-header .opt-head {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: #eee;
+  margin-right: .875rem;
+}
+
+.opt-header .user-coll {
+  display: flex;
+}
+
+.user-coll .el-icon {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 1.75rem;
+  line-height: 2.3rem;
+}
+
+.user-coll .el-icon::before {
+  margin-right: 1.75rem;
+}
+
+#options .opt-list {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.opt-list .opt-list-item {
+  height: 3.8rem;
+  line-height: 3.8rem;
+  text-indent: 1.4rem;
+}
+
+.opt-list .opt-list-item.active {
+  background-color: #f0f0f0;
+}
+
+.opt-list .item-index {
+  color: #00a2ea;
+}
 </style>
