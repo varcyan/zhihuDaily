@@ -1,5 +1,5 @@
 <template>
-    <swipe :auto="4000" class="s-wrap clearfix">
+    <swipe :auto="4000" id="swipe-wrap" class="s-wrap clearfix">
       <swipe-item v-for="item in data" :key="item.id">
         <custom-show-item :data="item"></custom-show-item>
       </swipe-item>  
@@ -49,28 +49,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  #swipe-wrap {
+    height: 16.875rem;
+  }
   .s-wrap {
-    width: 135rem;
-    height: 16.875rem;
-    overflow: hidden;
     position: relative;
-  }
-  .mint-swipe-items-wrap {
-    height: 16.875rem;
-    overflow: hidden;
-  }
-  .mint-swipe-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 27rem;
-    height: 16.875rem;
-    background-color: #eee;
-    color: #fff;
-    display: none;
-  }
-  .mint-swipe-item.is-active {
-    display: block;
   }
   .mint-swipe-indicators {
     position: absolute;
@@ -78,15 +61,19 @@ export default {
     display: flex;
     width: 27rem;
     justify-content: center;
+    opacity: 1;
   }
   .mint-swipe-indicators div {
-    width: .65rem;
-    height: .65rem;
-    margin: .25rem;
+    width: .55rem;
+    height: .55rem;
+    margin: .2rem;
     border-radius: .7rem;
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.6);
+  }
+  .mint-swipe-indicator {
+    opacity: 1;
   }
   .mint-swipe-indicators div.is-active {
-    background-color: rgba(255,255,255,1);
+    background-color: #fff;
   }
 </style>

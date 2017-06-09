@@ -10,6 +10,7 @@ import 'element-ui/lib/theme-default/index.css'
 Vue.use(ElementUI)
 //  Mint UI
 import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css'
 Vue.use(Mint);
 
 // axios vue-axios

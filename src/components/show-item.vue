@@ -24,9 +24,9 @@ export default {
   .s-item {
     position: relative;
     width: 27rem;
-    height: 16.875rem;
-    background-color: #eee;
+    height: 100%;
     color: #fff;
+    overflow: hidden;
   }
   .s-item img {
     width: 100%;
