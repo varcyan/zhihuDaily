@@ -4,21 +4,18 @@
     <meta charset="utf-8">
     <meta name="referrer" content="never">
     <title>知乎日报</title>
-    <script>
-      // 设置像素比
-      console.log(window.devicePixelRatio);
-      var num = 1 / window.devicePixelRatio;
-      document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + num + ',minimum-scale=' + num + ' ,maximum-scale=' + num + '" />')
-      //获取当前设备宽度，并计算出一个字号
-      var fontNum = document.documentElement.clientWidth / 27; 
-      var html = document.getElementsByTagName('html')[0];
-      //设置HTML字号
-      html.style.fontSize = fontNum + 'px'; 
-    </script>
+    <link rel="icon" href="/static/favicon.ico" mce_href="/static/favicon.ico" type="image/x-icon">
+  	<script type="text/javascript">
+  	  const num = 1 / window.devicePixelRatio;
+  	  document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+num+',minimum-scale='+num+',maximum-scale='+num+'"/>')
+  	  
+  	  const fontNum = document.documentElement.clientWidth /27
+  	  const html = document.getElementsByTagName('html')[0]
+  	  html.style.fontSize = fontNum + 'px'
+  	</script>    
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
-  
 </html>

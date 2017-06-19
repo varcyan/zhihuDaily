@@ -1,6 +1,6 @@
-# zhihu
+# zhihudaily
 
-> dailyZhihu
+> A Vue.js project
 
 ## Build Setup
 

@@ -1,30 +1,47 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// 引入需要的视图组件
-import Main from '@/views/index'
-import Detail from '@/views/detail'
-
-// css reset
-import ResetCss from '@/assets/css/reset.css'
-import HeaderCss from '@/assets/css/header.css'
-// import ToolsCss from '@/assets/css/tools.css'
-
+import Layout from '@/views/Layout'
+import Main from '@/views/backend/Main'
+import Theme from '@/views/backend/Theme'
+import Section from '@/views/backend/Section'
+import Detail from '@/views/backend/Detail'
+import Comment from '@/views/backend/Comment'
 
 Vue.use(Router)
 
-// 配置路由
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
-      component: Main
-    },
-    {
-      path: '/test',
-      name: 'Detail',
-      component: Detail
+      component: Layout,
+      children:[
+      	{
+     			path: '/',
+     			name:'Main',
+      		component: Main      		
+      	},
+      	{
+      		path: '/detail/:id?',
+      		name:'Detail',
+      		component:Detail
+      	},
+        {
+          path: '/section/:id?',
+          name:'Section',
+          component:Section
+        },
+        {
+          path: '/theme/:id?',
+          name:'Theme',
+          component:Theme
+        },
+        {
+          path:'/comment/:id?',
+          name:'Comment',
+          component:Comment
+        }        
+      ]
     }
   ]
 })
